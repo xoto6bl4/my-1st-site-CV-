@@ -1,48 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amal Kamalov - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../StylesMy.css">
     <link rel="icon" href="../Favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background elements -->
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
 
-<center>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-badge">PHOTO GALLERY</div>
+            <h1 class="glitch" data-text="My Moments">My Moments</h1>
+            <p class="header-subtitle">Life beyond the code</p>
+        </div>
+    </header>
 
-    <h1>Amal Kamalov CV</h1>
-    <h2>Junior QA engineer</h2>
-    
-<a href="../index.html">
-        <button>Main page</button>
-    </a>
-        <br><br>
-    <a href="../Pages/Contact page.html">
-        <button>Contacts</button>
-    </a>
-    <br><br>
-<table border="2" cellpadding="15">
-        <tr>
-            <td align="center" valign="middle">
-                <img src="../Photo/дейзі.jpg" alt="киця" height="250"><br>
-                <b>Дейзі</b>
-            </td>
-            <td align="center" valign="middle">
-                <img src="../Photo/для CV.jpg" alt="ну я" height="250"><br>
-                <b>Я</b>
-            </td>
-        </tr>
-        <tr>
-            <td align="center" valign="middle">
-                <img src="../Photo/я і ко.jpg" alt="я і киця" height="250"><br>
-                <b>Разом</b>
-            </td>
-            <td align="center" valign="middle">
-                <img src="../Photo/ялта паруус.jpg" alt="ялтачка" height="250"><br>
-                <b>Ялта</b>
-            </td>
-        </tr>
-    </table>
+    <!-- Main Container -->
+    <div class="gallery-container">
+        
+        <!-- Gallery Stats -->
+        <div class="gallery-stats">
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Фотографій</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Спогадів</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Дейзі ❤️</div>
+            </div>
+        </div>
 
-    </center>
+        <!-- Photo Grid -->
+        <div class="photo-grid-masonry">
+            
+            <!-- Photo 1 - Large -->
+            <div class="photo-card photo-card-large" data-index="0">
+                <div class="photo-wrapper">
+                    <img src="../Photo/дейзі.jpg" alt="Дейзі" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-zoom-btn">
+                            <span class="zoom-icon">🔍</span>
+                            <span class="zoom-text">Click to enlarge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-caption">
+                    <h3>Дейзі</h3>
+                    <p>Мій улюблений компаньйон, завжди поруч</p>
+                </div>
+            </div>
+
+            <!-- Photo 2 - Medium -->
+            <div class="photo-card photo-card-medium" data-index="1">
+                <div class="photo-wrapper">
+                    <img src="../Photo/для CV.jpg" alt="Я" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-zoom-btn">
+                            <span class="zoom-icon">🔍</span>
+                            <span class="zoom-text">Click to enlarge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-caption">
+                    <h3>Я</h3>
+                    <p>Junior QA Engineer на старті кар'єри</p>
+                </div>
+            </div>
+
+            <!-- Photo 3 - Medium -->
+            <div class="photo-card photo-card-medium" data-index="2">
+                <div class="photo-wrapper">
+                    <img src="../Photo/я і ко.jpg" alt="Разом" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-zoom-btn">
+                            <span class="zoom-icon">🔍</span>
+                            <span class="zoom-text">Click to enlarge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-caption">
+                    <h3>Разом</h3>
+                    <p>Найкращі моменти з найкращим другом</p>
+                </div>
+            </div>
+
+            <!-- Photo 4 - Large -->
+            <div class="photo-card photo-card-large" data-index="3">
+                <div class="photo-wrapper">
+                    <img src="../Photo/ялта паруус.jpg" alt="Ялта" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-zoom-btn">
+                            <span class="zoom-icon">🔍</span>
+                            <span class="zoom-text">Click to enlarge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-caption">
+                    <h3>Ялта</h3>
+                    <p>Море, вітер та незабутні враження</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="nav-section">
+            <div class="nav-card-wrapper">
+                <h2 class="section-title">
+                    <span class="title-decoration"></span>
+                    Navigation
+                </h2>
+                <div class="nav-buttons">
+                    <a href="../index.html" class="btn btn-primary">
+                        <span class="btn-icon">🏠</span>
+                        <span>Main Page</span>
+                    </a>
+                    <a href="Contact page.html" class="btn btn-secondary">
+                        <span class="btn-icon">📧</span>
+                        <span>Contacts</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">‹</button>
+        <button class="lightbox-next" aria-label="Next">›</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+            <div class="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        // Photo data
+        const photos = [
+            { src: '../Photo/дейзі.jpg', title: 'Дейзі', desc: 'Мій улюблений компаньйон, завжди поруч' },
+            { src: '../Photo/для CV.jpg', title: 'Я', desc: 'Junior QA Engineer на старті кар\'єри' },
+            { src: '../Photo/я і ко.jpg', title: 'Разом', desc: 'Найкращі моменти з найкращим другом' },
+            { src: '../Photo/ялта паруус.jpg', title: 'Ялта', desc: 'Море, вітер та незабутні враження' }
+        ];
+
+        let currentIndex = 0;
+
+        // Get elements
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const lightboxCounter = document.querySelector('.lightbox-counter');
+        const photoCards = document.querySelectorAll('.photo-card');
+
+        // Open lightbox
+        function openLightbox(index) {
+            currentIndex = index;
+            updateLightbox();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Update lightbox content
+        function updateLightbox() {
+            const photo = photos[currentIndex];
+            lightboxImg.src = photo.src;
+            lightboxImg.alt = photo.title;
+            lightboxCaption.innerHTML = `<h3>${photo.title}</h3><p>${photo.desc}</p>`;
+            lightboxCounter.textContent = `${currentIndex + 1} / ${photos.length}`;
+        }
+
+        // Navigate to next photo
+        function nextPhoto() {
+            currentIndex = (currentIndex + 1) % photos.length;
+            updateLightbox();
+        }
+
+        // Navigate to previous photo
+        function prevPhoto() {
+            currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+            updateLightbox();
+        }
+
+        // Add click events to photo cards
+        photoCards.forEach((card) => {
+            card.addEventListener('click', () => {
+                const index = parseInt(card.getAttribute('data-index'));
+                openLightbox(index);
+            });
+        });
+
+        // Close button
+        document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+
+        // Navigation buttons
+        document.querySelector('.lightbox-next').addEventListener('click', nextPhoto);
+        document.querySelector('.lightbox-prev').addEventListener('click', prevPhoto);
+
+        // Close on background click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextPhoto();
+            if (e.key === 'ArrowLeft') prevPhoto();
+        });
+    </script>
 
 </body>
 </html>

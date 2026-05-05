@@ -1,74 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-    <title>Amal Kamalov - CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal Kamalov - QA Engineer</title>
+    <link rel="stylesheet" type="text/css" href="StylesMy.css">
     <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background elements -->
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
 
-<center>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-badge">QA ENGINEER</div>
+            <h1 class="glitch" data-text="Amal Kamalov">Amal Kamalov</h1>
+            <p class="header-subtitle">Building Quality into Every Line of Code</p>
+        </div>
+    </header>
 
-    <h1>Amal Kamalov CV</h1>
-    <h2>Junior QA engineer</h2>
-    
-<a href="Pages/Contact page.html">
-        <button>Contacts</button>       
-    </a>
-    <br><br>
-<a href="Pages/Photo page.html">
-        <button>Gallery</button>          
-    </a>
-    <hr width="600">
-    <h2><em>Summary</em></h2>
-<table width="600">
-        <tr>
-            <td align="center">
-                <p>Passionate <strong>Junior QA/Trainee</strong> on a mission to ensure software quality.</p>
-                Currently honing my skills in:
-                <!-- Початок списку -->
-                <ul>
-                    <li>Mobile testing</li>
-                    <li>Automation QA</li>
-                    <li>SQL</li>
-                    <li>Quality assurance processes</li>
-                </ul>
-                <!-- Кінець списку -->
-                
-                <p>Logical thinker, detail-oriented, and ready to contribute to building reliable digital products.</p>
-            </td>
-        </tr>
-    </table>
+    <!-- Main Container -->
+    <div class="cv-container">
+        
+        <!-- Left Column -->
+        <aside class="left-column">
+            
+            <!-- Navigation Card -->
+            <div class="card nav-card">
+                <h3 class="card-title">Navigate</h3>
+                <div class="button-group">
+                    <a href="Pages/Contact page.html" class="btn btn-primary">
+                        <span class="btn-icon">📧</span>
+                        <span>Contacts</span>
+                    </a>
+                    <a href="Pages/Photo page.html" class="btn btn-secondary">
+                        <span class="btn-icon">🖼️</span>
+                        <span>Gallery</span>
+                    </a>
+                </div>
+            </div>
 
-<!-- Тута буде табличка -->
-    <table border="1" width="600">
-        <tr>
-            <th>Category</th>
-            <th>Skills and Tools</th>
-        </tr>
-        <tr>
-            <td align="center">Metodology</td>
-            <td align="center">Manual testing, requirements analysis, bug-reporting</td>
-        </tr>
-        <tr>
-            <td align="center">Technology</td>
-            <td align="center">HTML, Agile, Git, Jira</td>
-        </tr>
-    </table>    
-<table width="800">
-        <tr>
-            <td align="center">
-    <th><p>Цікава думка з форуму DOU щодо тестування:</p>
+            <!-- Skills Card -->
+            <div class="card skills-card">
+                <h3 class="card-title">Technical Stack</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <span class="skill-icon">⚙️</span>
+                            <h4>Methodology</h4>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Manual testing</li>
+                            <li>Requirements analysis</li>
+                            <li>Bug reporting</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <span class="skill-icon">🛠️</span>
+                            <h4>Technology</h4>
+                        </div>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>Agile</li>
+                            <li>Git</li>
+                            <li>Jira</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-<blockquote cite="https://dou.ua/forums/topic/59199/?from=forcol">
-    <i>"Якщо ви хоча б раз ловили себе на думці: «ISTQB Expert Level — це занадто складно і точно не для мене», — ви не одні. Я теж так думала. Причому довго.
-І справа була не в складності матеріалу. Я вже працювала з процесами, робила аудити, впроваджувала зміни. Але кожного разу, коли доходило до Expert Level, в голові з’являвся один і той самий стоп-сигнал: есе, суб’єктивність, «це тільки для обраних»..
-Це той момент, коли ти вже достатньо досвідчений, щоб розуміти цінність, але ще достатньо обережний, щоб не ризикувати. І чесно — я відкладала це роками. Поки одного дня не побачила, що правила гри змінились."</i>
-<br><br>©Ramella Basenko
-</blockquote></th>
-  </tr>
-</table>
-</center>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="right-column">
+            
+            <!-- Summary Card -->
+            <div class="card summary-card">
+                <h2 class="section-title">
+                    <span class="title-decoration"></span>
+                    About Me
+                </h2>
+                <div class="summary-content">
+                    <p class="lead-text">
+                        Passionate <strong class="highlight">Junior QA/Trainee</strong> on a mission to ensure software quality.
+                    </p>
+                    <p>Currently honing my skills in:</p>
+                    <div class="learning-grid">
+                        <div class="learning-item">
+                            <span class="learning-icon">📱</span>
+                            <span>Mobile testing</span>
+                        </div>
+                        <div class="learning-item">
+                            <span class="learning-icon">🤖</span>
+                            <span>Automation QA</span>
+                        </div>
+                        <div class="learning-item">
+                            <span class="learning-icon">🗄️</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="learning-item">
+                            <span class="learning-icon">✅</span>
+                            <span>Quality assurance</span>
+                        </div>
+                    </div>
+                    <p class="summary-footer">
+                        Logical thinker, detail-oriented, and ready to contribute to building reliable digital products.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Inspiration Card -->
+            <div class="card quote-card">
+                <h2 class="section-title">
+                    <span class="title-decoration"></span>
+                    Inspiration
+                </h2>
+                <blockquote>
+                    <div class="quote-mark">"</div>
+                    <p>
+                        Якщо ви хоча б раз ловили себе на думці: «ISTQB Expert Level — це занадто складно і точно не для мене», — ви не одні. Я теж так думала. Причому довго.
+                        І справа була не в складності матеріалу. Я вже працювала з процесами, робила аудити, впроваджувала зміни. Але кожного разу, коли доходило до Expert Level, в голові з'являвся один і той самий стоп-сигнал: есе, суб'єктивність, «це тільки для обраних»..
+                        Це той момент, коли ти вже достатньо досвідчений, щоб розуміти цінність, але ще достатньо обережний, щоб не ризикувати. І чесно — я відкладала це роками. Поки одного дня не побачила, що правила гри змінились.
+                    </p>
+                    <footer class="quote-author">
+                        <span class="author-line"></span>
+                        Ramella Basenko
+                    </footer>
+                </blockquote>
+            </div>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
-
