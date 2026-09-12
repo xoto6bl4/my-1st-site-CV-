@@ -1,259 +1,401 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Photo gallery of Amal Kamalov - a personal look beyond the code, alongside the QA Engineer portfolio.">
-    <title>Amal Kamalov - Gallery</title>
-    <link rel="stylesheet" type="text/css" href="../StylesMy.css">
-    <link rel="icon" href="../Favicon/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Amal Kamalov — personal moments and travels, a look beyond the code of a QA Engineer's portfolio.">
+  <title>Amal Kamalov — Gallery</title>
+  <link rel="stylesheet" type="text/css" href="../StylesMy.css">
+  <link rel="icon" href="../Favicon/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated background elements -->
-    <div class="bg-grid"></div>
-    <div class="bg-gradient"></div>
+  <!-- Animated background elements -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient"></div>
 
-    <!-- Header -->
-    <header class="main-header">
-        <div class="header-content">
-            <div class="header-badge">PHOTO GALLERY</div>
-            <h1 class="glitch" data-text="My Moments">My Moments</h1>
-            <p class="header-subtitle">Life beyond the code</p>
-        </div>
-    </header>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="../index.html" class="top-nav-brand">Amal Kamalov</a>
+      <div class="top-nav-links">
+        <a href="../index.html" class="top-nav-link">
+          <span class="btn-icon">🏠</span><span>Main</span>
+        </a>
+        <a href="Contact page.html" class="top-nav-link">
+          <span class="btn-icon">📧</span><span>Contacts</span>
+        </a>
+        <a href="Photo page.html" class="top-nav-link active">
+          <span class="btn-icon">🖼️</span><span>Gallery</span>
+        </a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Main Container -->
-    <div class="gallery-container">
-        
-        <!-- Gallery Stats -->
-        <div class="gallery-stats">
-            <div class="stat-item">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Фотографій</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">∞</div>
-                <div class="stat-label">Спогадів</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">1</div>
-                <div class="stat-label">Дейзі ❤️</div>
-            </div>
-        </div>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <div class="header-badge">PHOTO GALLERY</div>
+      <h1 class="glitch-text">My Moments</h1>
+      <p class="header-subtitle">Life beyond the code</p>
+    </div>
+  </header>
 
-        <!-- Photo Grid -->
-        <div class="photo-grid-masonry">
-            
-            <!-- Photo 1 - Large -->
-            <div class="photo-card" data-index="0">
-                <div class="photo-wrapper">
-                    <img src="../Photo/дейзі.jpg" alt="Дейзі" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-zoom-btn">
-                            <span class="zoom-icon">🔍</span>
-                            <span class="zoom-text">Click to enlarge</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-caption">
-                    <h3>Дейзі</h3>
-                    <p>Мій улюблений компаньйон, завжди поруч</p>
-                </div>
-            </div>
+  <!-- Main Container -->
+  <main class="gallery-container">
 
-            <!-- Photo 2 - Medium -->
-            <div class="photo-card" data-index="1">
-                <div class="photo-wrapper">
-                    <img src="../Photo/для CV.jpg" alt="Я" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-zoom-btn">
-                            <span class="zoom-icon">🔍</span>
-                            <span class="zoom-text">Click to enlarge</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-caption">
-                    <h3>Я</h3>
-                    <p>Junior QA Engineer на старті кар'єри</p>
-                </div>
-            </div>
-
-            <!-- Photo 3 - Medium -->
-            <div class="photo-card" data-index="2">
-                <div class="photo-wrapper">
-                    <img src="../Photo/я і ко.jpg" alt="Разом" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-zoom-btn">
-                            <span class="zoom-icon">🔍</span>
-                            <span class="zoom-text">Click to enlarge</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-caption">
-                    <h3>Разом</h3>
-                    <p>Найкращі моменти з найкращим другом</p>
-                </div>
-            </div>
-
-            <!-- Photo 4 -->
-            <div class="photo-card" data-index="3">
-                <div class="photo-wrapper">
-                    <img src="../Photo/ялта паруус.jpg" alt="Ялта" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-zoom-btn">
-                            <span class="zoom-icon">🔍</span>
-                            <span class="zoom-text">Click to enlarge</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-caption">
-                    <h3>Ялта</h3>
-                    <p>Море, вітер та незабутні враження</p>
-                </div>
-            </div>
-
-            <!-- Photo 5 -->
-            <div class="photo-card" data-index="4">
-                <div class="photo-wrapper">
-                    <img src="../Photo/турецький кіт.jpg" alt="Турецький кіт" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-zoom-btn">
-                            <span class="zoom-icon">🔍</span>
-                            <span class="zoom-text">Click to enlarge</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo-caption">
-                    <h3>Турецький кіт</h3>
-                    <p>Маленький друг, зустрінутий у подорожі</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Navigation Section -->
-        <div class="nav-section">
-            <div class="nav-card-wrapper">
-                <h2 class="section-title">
-                    <span class="title-decoration"></span>
-                    Navigation
-                </h2>
-                <div class="nav-buttons">
-                    <a href="../index.html" class="btn btn-primary">
-                        <span class="btn-icon">🏠</span>
-                        <span>Main Page</span>
-                    </a>
-                    <a href="Contact page.html" class="btn btn-secondary">
-                        <span class="btn-icon">📧</span>
-                        <span>Contacts</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
+    <!-- Gallery Stats -->
+    <div class="gallery-stats">
+      <div class="stat-item">
+        <div class="stat-number">13</div>
+        <div class="stat-label">Photos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Countries</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Curious Mind</div>
+      </div>
     </div>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <button class="lightbox-prev" aria-label="Previous">‹</button>
-        <button class="lightbox-next" aria-label="Next">›</button>
-        <div class="lightbox-content">
-            <img id="lightbox-img" src="" alt="">
-            <div class="lightbox-caption"></div>
-            <div class="lightbox-counter"></div>
+    <!-- Photo Grid -->
+    <div class="photo-grid-masonry">
+
+      <!-- Photo 1 -->
+      <div class="photo-card featured" data-index="0">
+        <div class="photo-wrapper">
+          <img src="../Photo/mosque-courtyard.jpg" alt="Süleymaniye Mosque courtyard, Istanbul" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
         </div>
+        <div class="photo-caption">
+          <h3>Süleymaniye Mosque</h3>
+          <p>Standing in the grand courtyard of one of Istanbul's most iconic mosques.</p>
+        </div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="photo-card" data-index="1">
+        <div class="photo-wrapper">
+          <img src="../Photo/lighthouse-bay.jpg" alt="Lighthouse and harbor by the sea" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Harbor Lighthouse</h3>
+          <p>A quiet coastal town with a red-and-white lighthouse guarding the bay.</p>
+        </div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="photo-card" data-index="2">
+        <div class="photo-wrapper">
+          <img src="../Photo/lighthouse-night.jpg" alt="Lighthouse beam at night" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Night Watch</h3>
+          <p>The same lighthouse, glowing bright against the dark evening sky.</p>
+        </div>
+      </div>
+
+      <!-- Photo 4 -->
+      <div class="photo-card" data-index="3">
+        <div class="photo-wrapper">
+          <img src="../Photo/sunset-silhouette.jpg" alt="Silhouette watching the sunset over the sea" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Golden Hour</h3>
+          <p>Watching the sun dip below the horizon at the edge of the cliffs.</p>
+        </div>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="photo-card" data-index="4">
+        <div class="photo-wrapper">
+          <img src="../Photo/night-cliff.jpg" alt="Illuminated cliffside at night" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Blue Hour Cove</h3>
+          <p>A hidden cove lit in violet-blue tones just after sunset.</p>
+        </div>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="photo-card" data-index="5">
+        <div class="photo-wrapper">
+          <img src="../Photo/cat-by-sea.jpg" alt="Ginger cat resting by the sea" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Seaside Companion</h3>
+          <p>A ginger cat keeping watch over the coastline.</p>
+        </div>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="photo-card" data-index="6">
+        <div class="photo-wrapper">
+          <img src="../Photo/ocean-waves.jpg" alt="Ocean waves under a cloudy sky" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Restless Sea</h3>
+          <p>Waves rolling in under a sky stacked with clouds.</p>
+        </div>
+      </div>
+
+      <!-- Photo 8 -->
+      <div class="photo-card" data-index="7">
+        <div class="photo-wrapper">
+          <img src="../Photo/storm-front.jpg" alt="Storm cloud shelf over the beach" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Incoming Storm</h3>
+          <p>A dramatic shelf cloud rolling in over the shoreline.</p>
+        </div>
+      </div>
+
+      <!-- Photo 9 -->
+      <div class="photo-card" data-index="8">
+        <div class="photo-wrapper">
+          <img src="../Photo/bosphorus-view.jpg" alt="View over the Bosphorus strait" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Across the Bosphorus</h3>
+          <p>A rooftop view over the strait, with the city stretching along both shores.</p>
+        </div>
+      </div>
+
+      <!-- Photo 10 -->
+      <div class="photo-card" data-index="9">
+        <div class="photo-wrapper">
+          <img src="../Photo/istanbul-night.jpg" alt="Istanbul skyline at night with Galata Tower" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>City of Lights</h3>
+          <p>Galata Tower and a mosque skyline glowing over Istanbul at night.</p>
+        </div>
+      </div>
+
+      <!-- Photo 11 -->
+      <div class="photo-card" data-index="10">
+        <div class="photo-wrapper">
+          <img src="../Photo/swallows-nest.jpg" alt="Swallow's Nest castle on a cliff in Yalta" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Swallow's Nest</h3>
+          <p>A castle perched dramatically on a cliff above the sea in Yalta.</p>
+        </div>
+      </div>
+
+      <!-- Photo 12 -->
+      <div class="photo-card" data-index="11">
+        <div class="photo-wrapper">
+          <img src="../Photo/street-cat.jpg" alt="Ginger street cat on cobblestones" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Local Resident</h3>
+          <p>A friendly street cat exploring the cobblestone alley.</p>
+        </div>
+      </div>
+
+      <!-- Photo 13 -->
+      <div class="photo-card" data-index="12">
+        <div class="photo-wrapper">
+          <img src="../Photo/me-and-cat.jpg" alt="Amal with a cat" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-zoom-btn">
+              <span class="zoom-icon">🔍</span>
+              <span class="zoom-text">Click to enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <h3>Making Friends</h3>
+          <p>Every trip is better with a new furry friend along the way.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- JavaScript for Lightbox -->
-    <script>
-        // Photo data
-        const photos = [
-            { src: '../Photo/дейзі.jpg', title: 'Дейзі', desc: 'Мій улюблений компаньйон, завжди поруч' },
-            { src: '../Photo/для CV.jpg', title: 'Я', desc: 'Junior QA Engineer на старті кар\'єри' },
-            { src: '../Photo/я і ко.jpg', title: 'Разом', desc: 'Найкращі моменти з найкращим другом' },
-            { src: '../Photo/ялта паруус.jpg', title: 'Ялта', desc: 'Море, вітер та незабутні враження' },
-            { src: '../Photo/турецький кіт.jpg', title: 'Турецький кіт', desc: 'Маленький друг, зустрінутий у подорожі' }
-        ];
+  </main>
 
-        let currentIndex = 0;
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+      </div>
+      <div class="lightbox-counter"></div>
+    </div>
+  </div>
 
-        // Get elements
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCaption = document.querySelector('.lightbox-caption');
-        const lightboxCounter = document.querySelector('.lightbox-counter');
-        const photoCards = document.querySelectorAll('.photo-card');
+  <!-- JavaScript for Lightbox -->
+  <script>
+    // Photo data
+    const photos = [
+      { src: '../Photo/mosque-courtyard.jpg', title: 'Suleymaniye Mosque', desc: "Standing in the grand courtyard of one of Istanbul's most iconic mosques." },
+      { src: '../Photo/lighthouse-bay.jpg', title: 'Harbor Lighthouse', desc: 'A quiet coastal town with a red-and-white lighthouse guarding the bay.' },
+      { src: '../Photo/lighthouse-night.jpg', title: 'Night Watch', desc: 'The same lighthouse, glowing bright against the dark evening sky.' },
+      { src: '../Photo/sunset-silhouette.jpg', title: 'Golden Hour', desc: 'Watching the sun dip below the horizon at the edge of the cliffs.' },
+      { src: '../Photo/night-cliff.jpg', title: 'Blue Hour Cove', desc: 'A hidden cove lit in violet-blue tones just after sunset.' },
+      { src: '../Photo/cat-by-sea.jpg', title: 'Seaside Companion', desc: 'A ginger cat keeping watch over the coastline.' },
+      { src: '../Photo/ocean-waves.jpg', title: 'Restless Sea', desc: 'Waves rolling in under a sky stacked with clouds.' },
+      { src: '../Photo/storm-front.jpg', title: 'Incoming Storm', desc: 'A dramatic shelf cloud rolling in over the shoreline.' },
+      { src: '../Photo/bosphorus-view.jpg', title: 'Across the Bosphorus', desc: 'A rooftop view over the strait, with the city stretching along both shores.' },
+      { src: '../Photo/istanbul-night.jpg', title: 'City of Lights', desc: 'Galata Tower and a mosque skyline glowing over Istanbul at night.' },
+      { src: '../Photo/swallows-nest.jpg', title: "Swallow's Nest", desc: 'A castle perched dramatically on a cliff above the sea in Yalta.' },
+      { src: '../Photo/street-cat.jpg', title: 'Local Resident', desc: 'A friendly street cat exploring the cobblestone alley.' },
+      { src: '../Photo/me-and-cat.jpg', title: 'Making Friends', desc: 'Every trip is better with a new furry friend along the way.' }
+    ];
 
-        // Open lightbox
-        function openLightbox(index) {
-            currentIndex = index;
-            updateLightbox();
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+    let currentIndex = 0;
 
-        // Close lightbox
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+    // Get elements
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+    const lightboxCounter = document.querySelector('.lightbox-counter');
+    const photoCards = document.querySelectorAll('.photo-card');
 
-        // Update lightbox content
-        function updateLightbox() {
-            const photo = photos[currentIndex];
-            lightboxImg.src = photo.src;
-            lightboxImg.alt = photo.title;
-            lightboxCaption.innerHTML = `<h3>${photo.title}</h3><p>${photo.desc}</p>`;
-            lightboxCounter.textContent = `${currentIndex + 1} / ${photos.length}`;
-        }
+    // Open lightbox
+    function openLightbox(index) {
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
 
-        // Navigate to next photo
-        function nextPhoto() {
-            currentIndex = (currentIndex + 1) % photos.length;
-            updateLightbox();
-        }
+    // Close lightbox
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
 
-        // Navigate to previous photo
-        function prevPhoto() {
-            currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-            updateLightbox();
-        }
+    // Update lightbox content
+    function updateLightbox() {
+      const photo = photos[currentIndex];
+      lightboxImg.src = photo.src;
+      lightboxImg.alt = photo.title;
+      lightboxTitle.textContent = photo.title;
+      lightboxDesc.textContent = photo.desc;
+      lightboxCounter.textContent = `${currentIndex + 1} / ${photos.length}`;
+    }
 
-        // Add click events to photo cards
-        photoCards.forEach((card) => {
-            card.addEventListener('click', () => {
-                const index = parseInt(card.getAttribute('data-index'));
-                openLightbox(index);
-            });
-        });
+    // Navigate to next photo
+    function nextPhoto() {
+      currentIndex = (currentIndex + 1) % photos.length;
+      updateLightbox();
+    }
 
-        // Close button
-        document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    // Navigate to previous photo
+    function prevPhoto() {
+      currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+      updateLightbox();
+    }
 
-        // Navigation buttons
-        document.querySelector('.lightbox-next').addEventListener('click', nextPhoto);
-        document.querySelector('.lightbox-prev').addEventListener('click', prevPhoto);
+    // Add click events to photo cards
+    photoCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const index = parseInt(card.getAttribute('data-index'), 10);
+        openLightbox(index);
+      });
+    });
 
-        // Close on background click
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
+    // Close button
+    document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
 
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (!lightbox.classList.contains('active')) return;
-            
-            if (e.key === 'Escape') closeLightbox();
-            if (e.key === 'ArrowRight') nextPhoto();
-            if (e.key === 'ArrowLeft') prevPhoto();
-        });
-    </script>
+    // Navigation buttons
+    document.querySelector('.lightbox-next').addEventListener('click', nextPhoto);
+    document.querySelector('.lightbox-prev').addEventListener('click', prevPhoto);
 
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextPhoto();
+      if (e.key === 'ArrowLeft') prevPhoto();
+    });
+  </script>
 </body>
 </html>
