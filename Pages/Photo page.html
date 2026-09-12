@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of Amal Kamalov - a personal look beyond the code, alongside the QA Engineer portfolio.">
     <title>Amal Kamalov - Gallery</title>
     <link rel="stylesheet" type="text/css" href="../StylesMy.css">
     <link rel="icon" href="../Favicon/favicon.ico" type="image/x-icon">
@@ -30,7 +31,7 @@
         <!-- Gallery Stats -->
         <div class="gallery-stats">
             <div class="stat-item">
-                <div class="stat-number">4</div>
+                <div class="stat-number">5</div>
                 <div class="stat-label">Фотографій</div>
             </div>
             <div class="stat-item">
@@ -47,7 +48,7 @@
         <div class="photo-grid-masonry">
             
             <!-- Photo 1 - Large -->
-            <div class="photo-card photo-card-large" data-index="0">
+            <div class="photo-card" data-index="0">
                 <div class="photo-wrapper">
                     <img src="../Photo/дейзі.jpg" alt="Дейзі" loading="lazy">
                     <div class="photo-overlay">
@@ -64,7 +65,7 @@
             </div>
 
             <!-- Photo 2 - Medium -->
-            <div class="photo-card photo-card-medium" data-index="1">
+            <div class="photo-card" data-index="1">
                 <div class="photo-wrapper">
                     <img src="../Photo/для CV.jpg" alt="Я" loading="lazy">
                     <div class="photo-overlay">
@@ -81,7 +82,7 @@
             </div>
 
             <!-- Photo 3 - Medium -->
-            <div class="photo-card photo-card-medium" data-index="2">
+            <div class="photo-card" data-index="2">
                 <div class="photo-wrapper">
                     <img src="../Photo/я і ко.jpg" alt="Разом" loading="lazy">
                     <div class="photo-overlay">
@@ -97,8 +98,8 @@
                 </div>
             </div>
 
-            <!-- Photo 4 - Large -->
-            <div class="photo-card photo-card-large" data-index="3">
+            <!-- Photo 4 -->
+            <div class="photo-card" data-index="3">
                 <div class="photo-wrapper">
                     <img src="../Photo/ялта паруус.jpg" alt="Ялта" loading="lazy">
                     <div class="photo-overlay">
@@ -111,6 +112,23 @@
                 <div class="photo-caption">
                     <h3>Ялта</h3>
                     <p>Море, вітер та незабутні враження</p>
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="photo-card" data-index="4">
+                <div class="photo-wrapper">
+                    <img src="../Photo/турецький кіт.jpg" alt="Турецький кіт" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-zoom-btn">
+                            <span class="zoom-icon">🔍</span>
+                            <span class="zoom-text">Click to enlarge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-caption">
+                    <h3>Турецький кіт</h3>
+                    <p>Маленький друг, зустрінутий у подорожі</p>
                 </div>
             </div>
 
@@ -157,7 +175,8 @@
             { src: '../Photo/дейзі.jpg', title: 'Дейзі', desc: 'Мій улюблений компаньйон, завжди поруч' },
             { src: '../Photo/для CV.jpg', title: 'Я', desc: 'Junior QA Engineer на старті кар\'єри' },
             { src: '../Photo/я і ко.jpg', title: 'Разом', desc: 'Найкращі моменти з найкращим другом' },
-            { src: '../Photo/ялта паруус.jpg', title: 'Ялта', desc: 'Море, вітер та незабутні враження' }
+            { src: '../Photo/ялта паруус.jpg', title: 'Ялта', desc: 'Море, вітер та незабутні враження' },
+            { src: '../Photo/турецький кіт.jpg', title: 'Турецький кіт', desc: 'Маленький друг, зустрінутий у подорожі' }
         ];
 
         let currentIndex = 0;
