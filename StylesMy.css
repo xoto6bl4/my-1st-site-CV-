@@ -125,6 +125,80 @@ ul {
   to { transform: rotate(360deg); }
 }
 
+/* ================================ Hero ===================================== */
+
+.hero {
+  position: relative;
+  z-index: 10;
+  padding: var(--space-xl) var(--space-md);
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.hero-photo-wrapper {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid transparent;
+  background: var(--gradient-primary);
+  padding: 4px;
+  box-shadow: var(--shadow-glow);
+  animation: fadeIn 0.8s ease-out 0.1s backwards;
+}
+
+.hero-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text .header-badge { margin-bottom: var(--space-md); }
+.hero-text .glitch-text { margin-bottom: var(--space-sm); }
+.hero-text .header-subtitle { margin-bottom: var(--space-lg); }
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  animation: fadeIn 0.8s ease-out 0.7s backwards;
+}
+
+.hero-cta .btn {
+  padding: 0.85rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-cta {
+    justify-content: center;
+  }
+  .hero-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 /* ============================= Header ===================================== */
 
 .main-header {
@@ -342,6 +416,48 @@ ul {
   font-size: 1.125rem;
 }
 
+/* ============================ Quick Facts Card ================================ */
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.facts-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.fact-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.fact-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.fact-value {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
 /* ============================ Skills Card =================================== */
 
 .skills-grid {
@@ -498,6 +614,58 @@ ul {
 .profile-info p {
   color: var(--text-secondary);
   font-size: 0.9375rem;
+}
+
+/* ============================ Roadmap / Progress =============================== */
+
+.roadmap-card {
+  animation: fadeInRight 0.6s ease-out 0.3s backwards;
+}
+
+.roadmap-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.roadmap-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-icon {
+  font-size: 1.1rem;
+}
+
+.roadmap-name {
+  flex: 1;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.roadmap-percent {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--gradient-primary);
+  transition: width 1s ease-out;
 }
 
 /* ============================== Quote Card =================================== */

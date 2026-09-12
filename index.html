@@ -6,7 +6,12 @@
   <meta name="description" content="Amal Kamalov — Junior QA Engineer portfolio. Manual testing, requirements analysis, bug reporting, and a growing toolkit in automation, SQL, and mobile QA.">
   <title>Amal Kamalov — QA Engineer</title>
   <link rel="stylesheet" type="text/css" href="StylesMy.css">
-  <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="Favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="Favicon/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="Favicon/favicon-512x512.png">
+  <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -34,12 +39,27 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="main-header" id="main-header">
-    <div class="header-content">
-      <div class="header-badge">QA ENGINEER</div>
-      <h1 class="glitch-text">Amal Kamalov</h1>
-      <p class="header-subtitle">Building Quality Into Every Line of Product</p>
+  <!-- Hero -->
+  <header class="hero" id="main-header">
+    <div class="hero-inner">
+      <div class="hero-photo-wrapper">
+        <img src="Photo/profile.jpg" alt="Amal Kamalov portrait" loading="lazy">
+      </div>
+      <div class="hero-text">
+        <div class="header-badge">QA ENGINEER</div>
+        <h1 class="glitch-text">Amal Kamalov</h1>
+        <p class="header-subtitle">Building quality into every line of product</p>
+        <div class="hero-cta">
+          <a href="Pages/Contact page.html" class="btn btn-primary">
+            <span class="btn-icon">📧</span>
+            <span>Contact Me</span>
+          </a>
+          <a href="Pages/Photo page.html" class="btn btn-secondary">
+            <span class="btn-icon">🖼️</span>
+            <span>View Gallery</span>
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -49,15 +69,39 @@
     <!-- Left Column -->
     <div class="left-column">
 
-      <!-- Profile Photo Card -->
-      <div class="card profile-card">
-        <div class="profile-photo-wrapper">
-          <img src="Photo/profile.jpg" alt="Amal Kamalov portrait" loading="lazy">
-        </div>
-        <div class="profile-info">
-          <h2>Amal Kamalov</h2>
-          <p>Junior QA Engineer</p>
-        </div>
+      <!-- Quick Facts Card -->
+      <div class="card facts-card">
+        <h3 class="card-title"><span class="title-decoration"></span>Quick Facts</h3>
+        <ul class="facts-list">
+          <li>
+            <span class="fact-icon">📍</span>
+            <div>
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Ukraine</span>
+            </div>
+          </li>
+          <li>
+            <span class="fact-icon">💼</span>
+            <div>
+              <span class="fact-label">Role</span>
+              <span class="fact-value">Junior QA Engineer</span>
+            </div>
+          </li>
+          <li>
+            <span class="fact-icon">🌐</span>
+            <div>
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">Ukrainian, English</span>
+            </div>
+          </li>
+          <li>
+            <span class="fact-icon">✅</span>
+            <div>
+              <span class="fact-label">Availability</span>
+              <span class="fact-value">Open to opportunities</span>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <!-- Skills Card -->
@@ -102,26 +146,8 @@
           <p class="lead-text">
             Junior QA Engineer with a solid foundation in <span class="accent">manual testing</span>,
             requirements analysis, and bug reporting. My mission is to ensure product quality
-            through structured testing at every stage of development, while honing skills in:
+            through structured testing at every stage of development.
           </p>
-          <div class="learning-grid">
-            <div class="learning-item">
-              <span class="learning-icon">📱</span>
-              <span>Mobile testing</span>
-            </div>
-            <div class="learning-item">
-              <span class="learning-icon">🤖</span>
-              <span>Automation QA</span>
-            </div>
-            <div class="learning-item">
-              <span class="learning-icon">🗄️</span>
-              <span>SQL</span>
-            </div>
-            <div class="learning-item">
-              <span class="learning-icon">✅</span>
-              <span>Quality assurance</span>
-            </div>
-          </div>
           <p class="summary-footer">
             A logical, detail-oriented thinker who enjoys solving problems and is ready to
             contribute to building reliable, high-quality digital products.
@@ -129,24 +155,43 @@
         </div>
       </div>
 
-      <!-- Inspiration Card -->
-      <div class="card quote-card">
-        <h2 class="section-title"><span class="title-decoration"></span>Inspiration</h2>
-        <blockquote>
-          <div class="quote-mark">«</div>
-          <p>
-            «ISTQB Expert Level — це занадто складно, не для мене», — так я думала довго.
-            І справа була не в складності матеріалу: я вже працювала з процесами, робила
-            аудити, впроваджувала зміни. Просто сам вислів «Expert Level» ставав
-            стоп-сигналом. Це була суб'єктивна впевненість «це тільки для обраних» —
-            досвідчений, обережний розум, що не хоче ризикувати, відкладала рік за роком.
-            Поки не побачила: правила гри давно змінились, і час діяти — саме зараз.
-          </p>
-          <footer class="quote-author">
-            <span class="author-line"></span>
-            Ramella Basenko
-          </footer>
-        </blockquote>
+      <!-- Learning Roadmap Card -->
+      <div class="card roadmap-card">
+        <h2 class="section-title"><span class="title-decoration"></span>Currently Growing In</h2>
+        <div class="roadmap-list">
+          <div class="roadmap-item">
+            <div class="roadmap-top">
+              <span class="roadmap-icon">📱</span>
+              <span class="roadmap-name">Mobile Testing</span>
+              <span class="roadmap-percent">70%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-top">
+              <span class="roadmap-icon">🤖</span>
+              <span class="roadmap-name">Automation QA</span>
+              <span class="roadmap-percent">55%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 55%;"></div></div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-top">
+              <span class="roadmap-icon">🗄️</span>
+              <span class="roadmap-name">SQL</span>
+              <span class="roadmap-percent">60%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 60%;"></div></div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-top">
+              <span class="roadmap-icon">🎓</span>
+              <span class="roadmap-name">ISTQB Foundation Level</span>
+              <span class="roadmap-percent">85%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
