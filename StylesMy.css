@@ -86,9 +86,10 @@ ul {
 
 .bg-grid {
   position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: -50px;
+  left: -50px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
   background-image:
     linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
@@ -96,13 +97,18 @@ ul {
   pointer-events: none;
   z-index: 0;
   animation: gridMove 20s linear infinite;
-  will-change: background-position;
+  will-change: transform;
   contain: strict;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
+/* Transform-only animation: stays on the compositor thread, avoids
+   repainting the fixed full-viewport layer every frame (the cause of
+   scroll jank on pages with many backdrop-filter blurred cards). */
 @keyframes gridMove {
-  from { background-position: 0 0; }
-  to { background-position: 50px 50px; }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50px, -50px, 0); }
 }
 
 .bg-gradient {
@@ -719,6 +725,161 @@ blockquote p {
 
 /* ============================== Contact Page ================================= */
 
+.business-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-lg);
+  animation: fadeIn 0.6s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.business-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gradient-primary);
+  opacity: 0.4;
+}
+
+.business-card-photo {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid transparent;
+  background: var(--gradient-primary);
+  padding: 3px;
+  box-shadow: var(--shadow-glow);
+}
+
+.business-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.business-card-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.business-card-role {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-sm);
+}
+
+.business-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  padding: 0.35rem 0.75rem;
+}
+
+.meta-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@media (max-width: 640px) {
+  .business-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .business-card-meta {
+    justify-content: center;
+  }
+}
+
+/* Closing CTA */
+
+.contact-cta {
+  margin-top: var(--space-xl);
+  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+  animation: fadeIn 0.6s ease-out 0.4s backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-glow);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.contact-cta-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+
+.contact-cta h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  position: relative;
+}
+
+.contact-cta p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+
+.contact-cta-btn {
+  display: inline-flex;
+  margin: 0 auto;
+  position: relative;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -898,10 +1059,6 @@ blockquote p {
 @media (min-width: 1200px) {
   .photo-grid-masonry {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .photo-card.featured {
-    grid-column: span 2;
-    grid-row: span 2;
   }
 }
 
