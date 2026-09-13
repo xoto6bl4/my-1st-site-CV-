@@ -39,6 +39,25 @@
     .education-icon { font-size: 1.5rem; }
     .education-item h3 { font-size: 0.95rem; margin-bottom: 0.3rem; }
     .education-item p { color: var(--text-secondary); font-size: 0.82rem; }
+
+    /* Performance tuning: keep the visual style, remove expensive full-screen animations and heavy card blur during scroll. */
+    .bg-grid,
+    .bg-gradient,
+    .bg-stars,
+    .bg-stars-far {
+      animation: none !important;
+      will-change: auto;
+    }
+    .card {
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shooting-star { display: none; }
+    }
+
     @media (max-width: 768px) {
       .project-grid, .education-grid { grid-template-columns: 1fr; }
       .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
