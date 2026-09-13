@@ -39,51 +39,18 @@
     .education-icon { font-size: 1.5rem; }
     .education-item h3 { font-size: 0.95rem; margin-bottom: 0.3rem; }
     .education-item p { color: var(--text-secondary); font-size: 0.82rem; }
-
-    /* Performance tuning: keep the visual style, remove expensive full-screen animations and heavy card blur during scroll. */
-    .bg-grid,
-    .bg-gradient,
-    .bg-stars,
-    .bg-stars-far {
-      animation: none !important;
-      will-change: auto;
-    }
-    .card {
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    /* Shared alignment grid: hero uses the exact same columns as the main CV content. */
-    .hero-inner {
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 340px minmax(0, 1fr);
-      gap: 32px;
-      align-items: center;
-    }
-    .hero-photo-wrapper {
-      justify-self: center;
-    }
-    .hero-text {
-      min-width: 0;
-      grid-column: 2;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .shooting-star { display: none; }
-    }
-
+    .bg-grid,.bg-gradient,.bg-stars,.bg-stars-far { animation: none !important; will-change: auto; }
+    .card { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: transform 0.2s ease,border-color 0.2s ease; }
+    /* Hero text starts on the exact same vertical line as the About Me card below. */
+    .hero-inner { max-width: 1200px; display: grid; grid-template-columns: 340px minmax(0,1fr); gap: 32px; align-items: center; }
+    .hero-photo-wrapper { justify-self: center; }
+    .hero-text { min-width: 0; grid-column: 2; margin-left: -36px; }
+    @media (prefers-reduced-motion: reduce) { .shooting-star { display: none; } }
     @media (max-width: 768px) {
-      .project-grid, .education-grid { grid-template-columns: 1fr; }
+      .project-grid,.education-grid { grid-template-columns: 1fr; }
       .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
-      .hero-inner {
-        display: flex;
-        gap: var(--space-md);
-      }
-      .hero-text {
-        grid-column: auto;
-      }
+      .hero-inner { display: flex; gap: var(--space-md); }
+      .hero-text { grid-column: auto; margin-left: 0; }
     }
   </style>
 </head>
