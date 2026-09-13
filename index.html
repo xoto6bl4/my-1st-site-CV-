@@ -54,21 +54,20 @@
       transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
-    /* Shared alignment grid: hero text starts on the same vertical line as the main right column. */
+    /* Shared alignment grid: hero uses the exact same columns as the main CV content. */
     .hero-inner {
-      max-width: 1020px;
-      gap: 87px;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+    .hero-photo-wrapper {
+      justify-self: center;
     }
     .hero-text {
-      flex: 1;
       min-width: 0;
-    }
-
-    @media (max-width: 1100px) and (min-width: 769px) {
-      .hero-inner {
-        max-width: 920px;
-        gap: 48px;
-      }
+      grid-column: 2;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -78,7 +77,13 @@
     @media (max-width: 768px) {
       .project-grid, .education-grid { grid-template-columns: 1fr; }
       .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
-      .hero-inner { gap: var(--space-md); }
+      .hero-inner {
+        display: flex;
+        gap: var(--space-md);
+      }
+      .hero-text {
+        grid-column: auto;
+      }
     }
   </style>
 </head>
