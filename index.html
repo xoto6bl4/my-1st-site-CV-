@@ -54,6 +54,23 @@
       transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
+    /* Shared alignment grid: hero text starts on the same vertical line as the main right column. */
+    .hero-inner {
+      max-width: 1020px;
+      gap: 87px;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    @media (max-width: 1100px) and (min-width: 769px) {
+      .hero-inner {
+        max-width: 920px;
+        gap: 48px;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .shooting-star { display: none; }
     }
@@ -61,6 +78,7 @@
     @media (max-width: 768px) {
       .project-grid, .education-grid { grid-template-columns: 1fr; }
       .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
+      .hero-inner { gap: var(--space-md); }
     }
   </style>
 </head>
