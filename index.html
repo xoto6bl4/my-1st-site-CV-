@@ -7,7 +7,7 @@
   <title>Amal Kamalov — QA Engineer</title>
   <link rel="stylesheet" type="text/css" href="StylesMy.css">
   <link rel="icon" href="Favicon/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="192x192" href="Favicon/favicon-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="Favicon/favicon-512x512.png">
   <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
@@ -39,18 +39,18 @@
     .education-icon { font-size: 1.5rem; }
     .education-item h3 { font-size: 0.95rem; margin-bottom: 0.3rem; }
     .education-item p { color: var(--text-secondary); font-size: 0.82rem; }
-    .bg-grid,.bg-gradient,.bg-stars,.bg-stars-far { animation: none !important; will-change: auto; }
-    .card { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: transform 0.2s ease,border-color 0.2s ease; }
-    /* Hero text starts on the exact same vertical line as the About Me card below. */
-    .hero-inner { max-width: 1200px; display: grid; grid-template-columns: 340px minmax(0,1fr); gap: 32px; align-items: center; }
-    .hero-photo-wrapper { justify-self: center; }
-    .hero-text { min-width: 0; grid-column: 2; margin-left: -36px; }
-    @media (prefers-reduced-motion: reduce) { .shooting-star { display: none; } }
-    @media (max-width: 768px) {
-      .project-grid,.education-grid { grid-template-columns: 1fr; }
-      .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
-      .hero-inner { display: flex; gap: var(--space-md); }
-      .hero-text { grid-column: auto; margin-left: 0; }
+    .bg-grid,.bg-gradient,.bg-stars,.bg-stars-far { animation:none!important; will-change:auto; }
+    .card { backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); transition:transform .2s ease,border-color .2s ease; }
+    /* Align hero text with the actual text start inside the About Me card. */
+    .hero-inner { max-width:1200px; display:grid; grid-template-columns:340px minmax(0,1fr); gap:32px; align-items:center; }
+    .hero-photo-wrapper { justify-self:center; }
+    .hero-text { min-width:0; grid-column:2; margin-left:92px; }
+    @media (prefers-reduced-motion:reduce) { .shooting-star { display:none; } }
+    @media (max-width:768px) {
+      .project-grid,.education-grid { grid-template-columns:1fr; }
+      .timeline-item { grid-template-columns:1fr; gap:.25rem; }
+      .hero-inner { display:flex; gap:var(--space-md); }
+      .hero-text { grid-column:auto; margin-left:0; }
     }
   </style>
 </head>
